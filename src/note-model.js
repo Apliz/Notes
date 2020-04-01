@@ -1,36 +1,14 @@
-// function Note() {
-//   this.noteList = [];
-// }
+(function (exports) {
 
-// Note.prototype.createNote = function (string) {
-//   this.pushNote(string);
-// };
-
-// Note.prototype.listONotes = function () {
-//   return this.noteList;
-// };
-
-// Note.prototype.pushNote = function (createNote) {
-//   this.noteList.push(createNote);
-// };
-
-(function(exports) {
-  var noteList = [];
-
-  function createNote (string) {
-    this.pushNote(string);
-  };
-  
-  function listONotes () {
-    return this.noteList;
-  };
-  
-  function pushNote (createNote) {
-    this.noteList.push(createNote);
+  // FUNCTION 1
+  function note(string) {
+    this.text = string;
   };
 
-  exports.createNote = createNote;
-  exports.listONotes = listONotes;
-  exports.pushNote = pushNote;
+  note.prototype.contents = function () {
+    return this.text;
+  };
 
-})
+  exports.note = note;
+
+})(this);
