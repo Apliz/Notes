@@ -1,11 +1,12 @@
 (function (exports) {
 
   function listNoteObjects() {
-    this.collection = []
+    this.collection = [];
   };
 
   listNoteObjects.prototype.add = function (string) {
-    this.collection.push(new note(string));
+    noteInstance = new note(string);
+    this.collection.push(noteInstance);
   };
 
   exports.listNoteObjects = listNoteObjects;
