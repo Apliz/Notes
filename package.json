@@ -1,0 +1,22 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "notes app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apliz/notes-model-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apliz/notes-model-js/issues"
+  },
+  "homepage": "https://github.com/Apliz/notes-model-js#readme",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}

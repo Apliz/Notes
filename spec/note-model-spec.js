@@ -2,10 +2,10 @@
 (function (exports) {
 
   function testCreateNote() {
-    note = new note("test");
-    if (note.contents() == 'test') {
+    noteInstance = new note("test");
+    if (noteInstance.contents() == 'test') {
       console.log('New note was created :: Test Pass');
-      note.text = null;
+      noteInstance.text = null;
       return true;
     } else {
       console.log('New note was not created :: Test Fail');

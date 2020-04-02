@@ -2,9 +2,9 @@
 (function (exports) {
 
   function testListNotes() {
-    noteList = new listNoteObjects();
-    noteList.add("Favourite drink: seltzer");
-    if (noteList.collection.length == 1) {
+    nListInstance = new listNoteObjects();
+    nListInstance.add("Favourite drink: seltzer");
+    if (nListInstance.collection.length == 1) {
       console.log('Note object stored in an array:: Test Pass');
       return true
     } else {
