@@ -2,7 +2,7 @@
 
   function controller() {
     this.view = new noteListView();
-    // this.view.noteList.add("Favourite drink: seltzer");
+    this.view.noteList.add("Favourite drink: seltzer");
   };
 
   controller.prototype.insertHTML = function () {
